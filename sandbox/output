@@ -1,6 +1,6 @@
-JUnit version 4.11-SNAPSHOT-20120416-1530
-I...
-Time: 0.028
-
-OK (3 tests)
-
+TicketDispenserTest.java:60: error: cannot find symbol
+        mockTurnNumberSequence.verifyMethodGetNextTurnNumberCalled();
+                              ^
+  symbol:   method verifyMethodGetNextTurnNumberCalled()
+  location: variable mockTurnNumberSequence of type MockTurnNumberSequence
+1 error

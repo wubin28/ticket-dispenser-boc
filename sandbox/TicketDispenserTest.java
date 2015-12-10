@@ -57,6 +57,7 @@ public class TicketDispenserTest {
 
         // Then
         assertEquals(11, ticket.getTurnNumber());
+        mockTurnNumberSequence.verifyMethodGetNextTurnNumberCalled();
     }
 }
 
