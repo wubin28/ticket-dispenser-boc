@@ -47,6 +47,8 @@ public class TicketDispenserTest {
 
     @Test
     public void the_dispenser_should_print_a_ticket_with_a_given_turn_number(){
-       
+    
+        // Then
+        assertEquals(11, ticket.getTurnNumber());
     }
 }
