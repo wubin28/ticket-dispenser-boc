@@ -18,7 +18,7 @@ public class TicketDispenserTest {
     }
 
     @Test
-    public  void the_turn_number_of_the_new_ticket_should_be_subsequent_to_the_previous_one_from_another_dispensor() {
+    public void the_turn_number_of_the_new_ticket_should_be_subsequent_to_the_previous_one_from_another_dispensor() {
     
         TicketDispenser anotherDispenser = new TicketDispenser();
         TicketDispenser dispenser = new TicketDispenser();
@@ -32,5 +32,7 @@ public class TicketDispenserTest {
             turnNumberOfNewTicket - 
                 turnNumberOfPreviousTicketFromAnotherDispenser);
     }
+
+    // TODO: the_dispenser_should_print_a_ticket_with_a_given_turn_number
 }
 
