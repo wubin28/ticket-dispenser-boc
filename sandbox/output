@@ -1,6 +1,4 @@
-JUnit version 4.11-SNAPSHOT-20120416-1530
-.
-Time: 0.029
-
-OK (1 test)
-
+TicketDispenserTest.java:26: error: ';' expected
+    assertEquals(1, (turnNumberOfTicketFromTheSecondDispenser - turnNumberOfTicketFromTheFirstDispenser) )
+                                                                                                          ^
+1 error
