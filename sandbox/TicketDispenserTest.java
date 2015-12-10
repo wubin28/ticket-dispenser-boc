@@ -9,6 +9,7 @@ public class TicketDispenserTest {
 
         TicketDispenser dispenser = new TicketDispenser();
 
+        TurnTicket previousTicket = dispenser.getTurnTicket();
         TurnTicket newTicket = dispenser.getTurnTicket();
 
         assertEquals(1, newTicket.getTurnNumber() - previousTicket.getTurnNumber());

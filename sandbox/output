@@ -1,6 +1,6 @@
-TicketDispenserTest.java:14: error: cannot find symbol
-        assertEquals(1, newTicket.getTurnNumber() - previousTicket.getTurnNumber());
-                                                    ^
-  symbol:   variable previousTicket
-  location: class TicketDispenserTest
-1 error
+JUnit version 4.11-SNAPSHOT-20120416-1530
+.
+Time: 0.029
+
+OK (1 test)
+
