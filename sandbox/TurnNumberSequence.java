@@ -5,4 +5,11 @@ public class TurnNumberSequence {
     {
         return _turnNumber++;
     }
+
+    private static int _vip_turnNumber = 1000;
+
+    public int getVipNextTurnNumber()
+    {
+        return _vip_turnNumber++;
+    }
 }
