@@ -17,4 +17,12 @@ public class TicketDispenser {
 
         return newTurnTicket;
     }
+
+    public TurnTicket getVipTurnTicket()
+    {
+        int newTurnNumber = this.turnNumberSequence.getVipNextTurnNumber();
+        TurnTicket newTurnTicket = new TurnTicket(newTurnNumber);
+
+        return newTurnTicket;
+    }
 }

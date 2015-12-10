@@ -1,11 +1,6 @@
-TicketDispenserTest.java:73: error: cannot find symbol
-        TurnTicket previousTicket = dispenser.getVipTurnTicket();
-                                             ^
-  symbol:   method getVipTurnTicket()
-  location: variable dispenser of type TicketDispenser
-TicketDispenserTest.java:74: error: cannot find symbol
-        TurnTicket newTicket = dispenser.getVipTurnTicket();
-                                        ^
-  symbol:   method getVipTurnTicket()
-  location: variable dispenser of type TicketDispenser
-2 errors
+TicketDispenser.java:23: error: cannot find symbol
+        int newTurnNumber = this.turnNumberSequence.getVipNextTurnNumber();
+                                                   ^
+  symbol:   method getVipNextTurnNumber()
+  location: variable turnNumberSequence of type TurnNumberSequence
+1 error
