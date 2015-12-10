@@ -45,7 +45,7 @@ public class TicketDispenserTest {
         int ticketNumber = dispenser.getTurnTicket().getTurnNumber();
         
         // Then
-        assertEquals(11, ticket.getTurnNumber());
+        assertEquals(11, ticketNumber);
         verify(mockTurnNumberSequence).getNextTurnNumber();
     }
 
