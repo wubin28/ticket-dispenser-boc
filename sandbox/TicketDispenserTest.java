@@ -65,16 +65,28 @@ public class TicketDispenserTest {
     }
 
     @Test
+        public void the_vip_turn_number_begin_from_1001() {
+        // Given
+        TicketDispenser dispenser = new TicketDispenser();
+
+        // When
+        TurnTicket newVipTicket = dispenser.getVipTurnTicket();
+
+        // Then
+        assertEquals(1001, newVipTicket.getTurnNumber());
+    }
+
+    @Test
         public void the_vip_turn_number_of_the_new_ticket_should_be_subsequent_to_the_previous_one() {
         // Given
         TicketDispenser dispenser = new TicketDispenser();
 
         // When
-        TurnTicket previousTicket = dispenser.getVipTurnTicket();
-        TurnTicket newTicket = dispenser.getVipTurnTicket();
+        TurnTicket previousVipTicket = dispenser.getVipTurnTicket();
+        TurnTicket newVipTicket = dispenser.getVipTurnTicket();
 
         // Then
-        assertEquals(1, newTicket.getTurnNumber() - previousTicket.getTurnNumber());
+        assertEquals(1, newVipTicket.getTurnNumber() - previousVipTicket.getTurnNumber());
     }
 
     @Test
