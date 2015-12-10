@@ -1,4 +1,11 @@
-TicketDispenserTest.java:26: error: ';' expected
-    assertEquals(1, (turnNumberOfTicketFromTheSecondDispenser - turnNumberOfTicketFromTheFirstDispenser) )
-                                                                                                          ^
-1 error
+TicketDispenserTest.java:26: error: cannot find symbol
+    assertEquals(1, (turnNumberOfTicketFromTheSecondDispenser - turnNumberOfTicketFromTheFirstDispenser) );
+                     ^
+  symbol:   variable turnNumberOfTicketFromTheSecondDispenser
+  location: class TicketDispenserTest
+TicketDispenserTest.java:26: error: cannot find symbol
+    assertEquals(1, (turnNumberOfTicketFromTheSecondDispenser - turnNumberOfTicketFromTheFirstDispenser) );
+                                                                ^
+  symbol:   variable turnNumberOfTicketFromTheFirstDispenser
+  location: class TicketDispenserTest
+2 errors
