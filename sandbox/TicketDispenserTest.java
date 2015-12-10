@@ -33,16 +33,20 @@ public class TicketDispenserTest {
                 turnNumberOfPreviousTicketFromAnotherDispenser);
     }
 
-    @Test @Ignore
+    @Test
     public void the_dispenser_should_print_a_ticket_with_a_given_turn_number_using_mockito(){
        
         //Given
-        TurnNumberSequence sequence = mock(TurnNumberSequence.class);
-        when(sequence.getNextTurnNumber()).thenReturn(1);
+        TurnNumberSequence mockTurnNumberSequence = mock(TurnNumberSequence.class);
+        when(mockTurnNumberSequence.getNextTurnNumber()).thenReturn(11);
+
         //When
-        TicketDispenser dispenser = new TicketDispenser();
+        TicketDispenser dispenser = new TicketDispenser(mockTurnNumberSequence);
         int ticketNumber = dispenser.getTurnTicket().getTurnNumber();
         
+        // Then
+        assertEquals(11, ticket.getTurnNumber());
+        verify(mockTurnNumberSequence).getNextTurnNumber();
     }
 
     @Test
