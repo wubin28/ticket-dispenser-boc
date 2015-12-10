@@ -17,9 +17,7 @@ public class TicketDispenserTest {
         assertEquals(1, newTicket.getTurnNumber() - previousTicket.getTurnNumber());
     }
 
-    //todo the_turn_number_of_the_new_ticket_should_be_subsequent_to_the_previous_one_from_another_dispensor
-
-      @Test
+    @Test
     public  void the_turn_number_of_the_new_ticket_should_be_subsequent_to_the_previous_one_from_another_dispensor() {
     
         TicketDispenser anotherDispenser = new TicketDispenser();
@@ -33,7 +31,6 @@ public class TicketDispenserTest {
         assertEquals(1, 
             turnNumberOfNewTicket - 
                 turnNumberOfPreviousTicketFromAnotherDispenser);
+    }
 }
 
-
-}
