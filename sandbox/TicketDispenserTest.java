@@ -38,7 +38,7 @@ public class TicketDispenserTest {
        
         //Given
         TurnNumberSequence sequence = mock(TurnNumberSequence.class);
-        when(TurnNumberSequence.getNextTurnNumber()).thenReturn(1);
+        when(sequence.getNextTurnNumber()).thenReturn(1);
         //When
         TicketDispenser dispenser = new TicketDispenser();
         int ticketNumber = dispenser.getTurnTicket().getTurnNumber();
