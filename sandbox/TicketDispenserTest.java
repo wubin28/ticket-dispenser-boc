@@ -65,7 +65,7 @@ public class TicketDispenserTest {
     }
 
     @Test
-        public void the_vip_turn_number_begin_from_1001() {
+    public void the_vip_turn_number_should_begin_from_1001() {
         // Given
         TicketDispenser dispenser = new TicketDispenser();
 
@@ -73,7 +73,7 @@ public class TicketDispenserTest {
         TurnTicket newVipTicket = dispenser.getVipTurnTicket();
 
         // Then
-        assertTrue(newVipTicket.getTurnNumber()>1000);
+        assertEquals(1001, newVipTicket.getTurnNumber());
     }
 
     @Test
