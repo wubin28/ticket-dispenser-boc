@@ -6,7 +6,7 @@ public class TurnNumberSequence {
         return _turnNumber++;
     }
 
-    private static int _vip_turnNumber = 1000;
+    private static int _vip_turnNumber = 1001;
 
     public int getVipNextTurnNumber()
     {
