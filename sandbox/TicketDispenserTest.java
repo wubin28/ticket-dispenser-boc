@@ -48,7 +48,8 @@ public class TicketDispenserTest {
     @Test
     public void the_dispenser_should_print_a_ticket_with_a_given_turn_number(){
         // Given
-        TicketDispenser dispenser = new TicketDispenser();
+        mockTurnNumberSequence.arrangeNextTurnNumber(11);
+        TicketDispenser dispenser = new TicketDispenser(mockTurnNumberSequence);
 
         // When
         TurnTicket ticket = dispenser.getTurnTicket();
@@ -57,3 +58,4 @@ public class TicketDispenserTest {
         assertEquals(11, ticket.getTurnNumber());
     }
 }
+
