@@ -10,4 +10,7 @@ public class MockTurnNumberSequence extends TurnNumberSequence {
     public int getNextTurnNumber() {
         return this.nextTurnNumber;
     }
+
+    public void verifyMethodGetNextTurnNumberCalled() {
+    }
 }
