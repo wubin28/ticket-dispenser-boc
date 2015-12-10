@@ -1,11 +1,11 @@
 TicketDispenserTest.java:51: error: cannot find symbol
-        mockTurnNumberSequence.arrangeNextTurnNumber(11);
+        MockTurnNumberSequence mockTurnNumberSequence = new MockTurnNumberSequence();
         ^
-  symbol:   variable mockTurnNumberSequence
+  symbol:   class MockTurnNumberSequence
   location: class TicketDispenserTest
-TicketDispenserTest.java:52: error: cannot find symbol
-        TicketDispenser dispenser = new TicketDispenser(mockTurnNumberSequence);
-                                                        ^
-  symbol:   variable mockTurnNumberSequence
+TicketDispenserTest.java:51: error: cannot find symbol
+        MockTurnNumberSequence mockTurnNumberSequence = new MockTurnNumberSequence();
+                                                            ^
+  symbol:   class MockTurnNumberSequence
   location: class TicketDispenserTest
 2 errors
